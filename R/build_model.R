@@ -107,7 +107,7 @@ function(workspace,...){
       gg <- ggraphics(container=w)
       ggmain <- dev.cur()
       Sys.sleep(0.2)
-      plot(data_frame_temp_raw[,1],data_frame_temp_raw[,4],ylab = "Temperature difference [°C]", xlab = "Years",cex = 0.5, col = "blue",pch = 5)
+      plot(data_frame_temp_raw[,1],data_frame_temp_raw[,4],ylab = "Temperature difference", xlab = "Years",cex = 0.5, col = "blue",pch = 5)
     
     }
 
