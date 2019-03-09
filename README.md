@@ -3,12 +3,12 @@
 
 # glmgui
 
-Mirror of the `glmgui` package:
-    <https://doi.org/10.5281/zenodo.2025865>
+Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
 
 <details>
 
-<summary>devtools::check()output</summary>
+<summary>devtools::check()
+    output</summary>
 
     #> ── Building ────────────────────────────────────────────────────────────────────────── glmgui ──
     #> Setting env vars:
@@ -35,9 +35,7 @@ Mirror of the `glmgui` package:
       
     ─  checking for empty or unneeded directories
     #> ─  looking to see if a ‘data/datalist’ file should be added
-    #> 
-      
-    ─  building ‘glmgui_1.0.tar.gz’
+    #> ─  building ‘glmgui_1.0.tar.gz’
     #> 
       
        
@@ -50,7 +48,7 @@ Mirror of the `glmgui` package:
     #> ● _R_CHECK_FORCE_SUGGESTS_          : FALSE
     #> ── R CMD check ────────────────────────────────────────────────────────────
     #>   
-    ─  using log directory ‘/tmp/RtmpdLQWaP/glmgui.Rcheck’
+    ─  using log directory ‘/tmp/RtmpWhrLNF/glmgui.Rcheck’
     #> 
       
     ─  using R version 3.5.2 (2018-12-20)
@@ -69,25 +67,29 @@ Mirror of the `glmgui` package:
     ✔  checking package namespace information
     #>    checking package dependencies ...
       
-    ✔  checking package dependencies (1s)
+    ✔  checking package dependencies (1.3s)
     #> 
       
     ✔  checking if this is a source package
     #> ✔  checking if there is a namespace
-    #>    checking for executable files ...
+    #> 
+      
+       checking for executable files ...
       
     ✔  checking for executable files
     #> 
       
     ✔  checking for hidden files and directories
-    #> ✔  checking for portable file names
+    #>    checking for portable file names ...
+      
+    ✔  checking for portable file names
+    #> ✔  checking for sufficient/correct file permissions
     #> 
       
-    ✔  checking for sufficient/correct file permissions
-    #> ✔  checking serialization versions
+    ✔  checking serialization versions
     #>    checking whether package ‘glmgui’ can be installed ...
       
-    ✔  checking whether package ‘glmgui’ can be installed (2.5s)
+    ✔  checking whether package ‘glmgui’ can be installed (2.4s)
     #> 
       
        checking installed package size ...
@@ -167,7 +169,7 @@ Mirror of the `glmgui` package:
       
        checking S3 generic/method consistency ...
       
-    ✔  checking S3 generic/method consistency (452ms)
+    ✔  checking S3 generic/method consistency (455ms)
     #> 
       
        checking replacement functions ...
@@ -1152,18 +1154,18 @@ Mirror of the `glmgui` package:
     #> 
       
        
-    #>    See
-    #>      ‘/tmp/RtmpdLQWaP/glmgui.Rcheck/00check.log’
-    #>    for details.
-    #>    
     #> 
       
     
       
-       
+       See
+    #>      ‘/tmp/RtmpWhrLNF/glmgui.Rcheck/00check.log’
+    #>    for details.
+    #>    
+    #>    
     #> 
     ── R CMD check results ──────────────────────────────────── glmgui 1.0 ────
-    #> Duration: 14s
+    #> Duration: 13.8s
     #> 
     #> ❯ checking dependencies in R code ... WARNING
     #>   '::' or ':::' import not declared from: ‘rLakeAnalyzer’
