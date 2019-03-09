@@ -1,0 +1,19 @@
+Package: glmgui
+Type: Package
+Title: glmGUI
+Version: 1.0
+Date: 2018-12-04
+Authors@R: c( person("Marko", "Wenk", role = "cre", email = "wenk_marko@gmx.de"),
+	      person("Benjamin", "Poschlod", role = "aut", email = "Benjamin.Poschlod@campus.lmu.de"),
+              person("Mark", "Vetter", role = "aut", email = "mark.vetter@fhws.de"),
+              person("Thomas", "Bueche", role = "aut", email = "thomas.bueche@geographie.uni-muenchen.de"))
+Description: GUI for working with the GLM lake model.
+License: GNU General Public License
+Depends: R (>= 3.4)
+NeedsCompilation: no
+Packaged: 2018-12-04 19:39:41 UTC; Marko
+Author: Marko Wenk [cre],
+  Benjamin Poschlod [aut],
+  Mark Vetter [aut],
+  Thomas Bueche [aut]
+Maintainer: Marko Wenk <wenk_marko@gmx.de>
