@@ -384,8 +384,8 @@ function(title,workspace, nc_file, dir_field_temp, datapoints){
   gen_default_fig(filename=FALSE, num_divs=2)#, omi = c(0.1, 0.5, 0, 0))
   .stacked_layout(T, num_divs=2)
 
-  .plot_df_heatmap(obs_df, bar_title = 'Temperature (°C): Observed', overlays=c(points(x=x,y=y, pch = 19, cex = 0.2),text(x_out[1],y=y.text,'observed', pos=4, offset = 1, col = "white", font = 2)), xaxis=xaxis2, col_lim=col_lim2)
-  .plot_df_heatmap(model_df, bar_title = paste('Temperature (°C): Modeled RMSE_Temp =', round(rmse, 2), '°C'), overlays=text(x_out[1],y=y.text,'modeled', pos=4, offset = 1, col = "white", font = 2), xaxis=xaxis2, col_lim=col_lim2)
+  .plot_df_heatmap(obs_df, bar_title = 'Temperature: Observed', overlays=c(points(x=x,y=y, pch = 19, cex = 0.2),text(x_out[1],y=y.text,'observed', pos=4, offset = 1, col = "white", font = 2)), xaxis=xaxis2, col_lim=col_lim2)
+  .plot_df_heatmap(model_df, bar_title = paste('Temperature: Modeled RMSE_Temp =', round(rmse, 2)), overlays=text(x_out[1],y=y.text,'modeled', pos=4, offset = 1, col = "white", font = 2), xaxis=xaxis2, col_lim=col_lim2)
   dev.copy(pdf,"contourplot_with_datapoints.pdf") # copies the "screen" to PDF
   dev.off()
   #reset par()
@@ -398,8 +398,8 @@ function(title,workspace, nc_file, dir_field_temp, datapoints){
     gen_default_fig(filename=FALSE, num_divs=2)#, omi = c(0.1, 0.5, 0, 0))
     .stacked_layout(T, num_divs=2)
     
-    .plot_df_heatmap(obs_df, bar_title = 'Temperature (°C): Observed', overlays=text(x_out[1],y=y.text,'observed', pos=4, offset = 1, col = "white", font = 2), xaxis=xaxis2, col_lim=col_lim2)
-    .plot_df_heatmap(model_df, bar_title = paste('Temperature (°C): Modeled RMSE_Temp =', round(rmse, 2), '°C'), overlays=text(x_out[1],y=y.text,'modeled', pos=4, offset = 1, col = "white", font = 2), xaxis=xaxis2, col_lim=col_lim2)
+    .plot_df_heatmap(obs_df, bar_title = 'Temperature: Observed', overlays=text(x_out[1],y=y.text,'observed', pos=4, offset = 1, col = "white", font = 2), xaxis=xaxis2, col_lim=col_lim2)
+    .plot_df_heatmap(model_df, bar_title = paste('Temperature: Modeled RMSE_Temp =', round(rmse, 2)), overlays=text(x_out[1],y=y.text,'modeled', pos=4, offset = 1, col = "white", font = 2), xaxis=xaxis2, col_lim=col_lim2)
     dev.copy(pdf,"contourplot_without_datapoints.pdf") # copies the "screen" to PDF
     dev.off()
     #reset par()
