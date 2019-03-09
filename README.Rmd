@@ -1,0 +1,28 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# glmgui
+
+Mirror of the `glmgui` package: https://doi.org/10.5281/zenodo.2025865
+
+<details>
+<summary>devtools::check()output</summary>
+```{r echo = FALSE, error=TRUE}
+devtools::check()
+```
+</details>
+
+
+
+
