@@ -126,7 +126,7 @@ function(workspace,...){
     
     if(svalue(checkbox_Temp_rmse)){
       temp_rmse <- compare_to_field(nc_file, dir_field_temp,metric = 'water.temperature', as_value = FALSE)
-      show_message(paste("Temperature RMSE: ",temp_rmse, " °C"))
+      show_message(paste("Temperature RMSE: ",temp_rmse, " "))
     }
     ###LEVEL
     if(svalue(checkbox_Level_plot) ||svalue(checkbox_Level_rmse)){

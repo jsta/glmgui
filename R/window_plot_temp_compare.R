@@ -369,7 +369,7 @@ function(title,workspace, nc_file, dir_field_temp, datapoints){
  
   if(datapoints==4){
   #pdf('diff_contourplot.pdf')  #doesn't work properly as the legend will be on a new page
-  .plot_df_heatmap_diff(diff_df, bar_title = paste('Temperature Difference (°C): Modeled - Observed RMSE_Temp =', round(rmse, 2), '°C'), xaxis=xaxis)
+  .plot_df_heatmap_diff(diff_df, bar_title = paste('Temperature Difference: Modeled - Observed RMSE_Temp =', round(rmse, 2)), xaxis=xaxis)
   
   dev.copy(pdf,"difference_contourplot.pdf") # copies the "screen" to PDF
   dev.off()
