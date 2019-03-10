@@ -1,6 +1,6 @@
 #' Windows main menu
 #'
-#' @import gWidgets
+#' @import gWidgets2
 #' @import tcltk
 #'
 windows_main_menu <-

@@ -4,7 +4,7 @@
 glmGUI <-
 function(...){
   version <- 1.0
-  libs = c("gWidgets","tcltk", "gWidgetsRGtk2", "ncdf4", "rLakeAnalyzer", "digest", "graphics", "testit" ,"treemap","akima", "imputeTS")
+  libs = c("gWidgets2","tcltk", "gWidgets2RGtk2", "ncdf4", "rLakeAnalyzer", "digest", "graphics", "testit" ,"treemap","akima", "imputeTS")
   for (i in libs){
     if( !is.element(i, .packages(all.available = TRUE)) ) {
       install.packages(i)

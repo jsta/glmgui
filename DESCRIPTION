@@ -11,9 +11,9 @@ Description: GUI for working with the GLM lake model.
 License: GNU General Public License
 Depends: R (>= 3.4)
 Imports:
-  gWidgets,
+  gWidgets2,
+  gWidgets2RGtk2,
   tcltk,
-  gWidgetsRGtk2,
   ncdf4,
   rLakeAnalyzer,
   digest,
