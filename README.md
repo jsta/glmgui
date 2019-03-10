@@ -3,7 +3,7 @@
 
 # glmgui
 
-Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
+Fork of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
 
 ## Installation
 
@@ -18,6 +18,35 @@ library(glmgui)
 
 glmGUI()
 ```
+
+![](images/screenshot.png)
+
+## Packaging
+
+### Bug fixes
+
+  - Fixed issue with `glmGUI` hanging on model build
+
+  - Removed multibyte degree symbols causing errors in `devtools::check`
+
+### Changes
+
+  - Replace use of the `gWidgets` package with `gWidgets2`
+
+  - Install dependencies during package install rather than in
+    `glmGUI()`
+
+  - Add `roxygen2` documentation
+
+### Wishlist
+
+  - Add ability to explore output of previously run models
+
+  - Resolve namespace conflicts between `glmtools` and `rLakeAnalyzer`
+
+  - Output graphs do not change when selecting different variables
+
+### CRANification
 
 <details>
 
@@ -68,7 +97,7 @@ glmGUI()
     #> ● _R_CHECK_FORCE_SUGGESTS_          : FALSE
     #> ── R CMD check ────────────────────────────────────────────────────────────
     #>   
-    ─  using log directory ‘/tmp/RtmpgPTdav/glmgui.Rcheck’
+    ─  using log directory ‘/tmp/RtmpnENyaj/glmgui.Rcheck’
     #> 
       
     ─  using R version 3.5.2 (2018-12-20)
@@ -76,7 +105,7 @@ glmGUI()
     #> ─  using session charset: UTF-8
     #> 
       
-    ─  using options ‘--no-manual --as-cran’ (688ms)
+    ─  using options ‘--no-manual --as-cran’ (658ms)
     #> 
       
     ✔  checking for file ‘glmgui/DESCRIPTION’
@@ -84,7 +113,7 @@ glmGUI()
     #> ✔  checking package namespace information
     #>    checking package dependencies ...
       
-    ✔  checking package dependencies (1.4s)
+    ✔  checking package dependencies (1.1s)
     #> 
       
     ✔  checking if this is a source package
@@ -93,18 +122,18 @@ glmGUI()
       
        checking for executable files ...
       
-    ✔  checking for executable files (371ms)
+    ✔  checking for executable files
     #> 
       
     ✔  checking for hidden files and directories
     #> ✔  checking for portable file names
-    #> ✔  checking for sufficient/correct file permissions
-    #> 
+    #>    checking for sufficient/correct file permissions ...
       
-    ✔  checking serialization versions
+    ✔  checking for sufficient/correct file permissions
+    #> ✔  checking serialization versions
     #>    checking whether package ‘glmgui’ can be installed ...
       
-    ✔  checking whether package ‘glmgui’ can be installed (3.7s)
+    ✔  checking whether package ‘glmgui’ can be installed (3.1s)
     #> 
       
        checking installed package size ...
@@ -127,7 +156,9 @@ glmGUI()
     ✔  checking DESCRIPTION meta-information
     #> 
       
-    ✔  checking top-level files
+    N  checking top-level files
+    #>    Non-standard file/directory found at top level:
+    #>      ‘images’
     #> ✔  checking for left-over files
     #> ✔  checking index information
     #>    checking package subdirectories ...
@@ -147,61 +178,61 @@ glmGUI()
       
        checking whether the package can be loaded ...
       
-    ✔  checking whether the package can be loaded (470ms)
+    ✔  checking whether the package can be loaded (453ms)
     #> 
       
        checking whether the package can be loaded with stated dependencies ...
       
-    ✔  checking whether the package can be loaded with stated dependencies (456ms)
+    ✔  checking whether the package can be loaded with stated dependencies (452ms)
     #> 
       
        checking whether the package can be unloaded cleanly ...
       
-    ✔  checking whether the package can be unloaded cleanly (448ms)
+    ✔  checking whether the package can be unloaded cleanly (439ms)
     #> 
       
        checking whether the namespace can be loaded with stated dependencies ...
       
-    ✔  checking whether the namespace can be loaded with stated dependencies (457ms)
+    ✔  checking whether the namespace can be loaded with stated dependencies (439ms)
+    #>    checking whether the namespace can be unloaded cleanly ...
+      
+    ✔  checking whether the namespace can be unloaded cleanly (455ms)
     #> 
       
-       checking whether the namespace can be unloaded cleanly ...
+       checking loading without being on the library search path ...
       
-    ✔  checking whether the namespace can be unloaded cleanly (467ms)
-    #>    checking loading without being on the library search path ...
-      
-    ✔  checking loading without being on the library search path (521ms)
+    ✔  checking loading without being on the library search path (486ms)
     #> 
       
        checking dependencies in R code ...
       
-    W  checking dependencies in R code (847ms)
-    #>    'library' or 'require' calls not declared from:
+    W  checking dependencies in R code (819ms)
+    #> 
+      
+       'library' or 'require' calls not declared from:
     #>      ‘GLMr’ ‘glmtools’
     #>    'library' or 'require' calls in package code:
     #>      ‘GLMr’ ‘glmtools’
     #>      Please use :: or requireNamespace() instead.
     #>      See section 'Suggested packages' in the 'Writing R Extensions' manual.
-    #> 
+    #>    checking S3 generic/method consistency ...
       
-       checking S3 generic/method consistency ...
-      
-    ✔  checking S3 generic/method consistency (1s)
+    ✔  checking S3 generic/method consistency (915ms)
     #> 
       
        checking replacement functions ...
       
-    ✔  checking replacement functions (582ms)
+    ✔  checking replacement functions (500ms)
     #> 
       
        checking foreign function calls ...
       
-    ✔  checking foreign function calls (777ms)
+    ✔  checking foreign function calls (713ms)
     #> 
       
        checking R code for possible problems ...
       
-    N  checking R code for possible problems (7.8s)
+    N  checking R code for possible problems (7.3s)
     #> 
       
        build_model: no visible binding for '<<-' assignment to
@@ -814,7 +845,7 @@ glmGUI()
       
        checking for missing documentation entries ...
       
-    W  checking for missing documentation entries (531ms)
+    W  checking for missing documentation entries (552ms)
     #>    Undocumented code objects:
     #>      ‘glmGUI’
     #>    Undocumented data sets:
@@ -846,7 +877,7 @@ glmGUI()
       
        checking Rd contents ...
       
-    ✔  checking Rd contents (1s)
+    ✔  checking Rd contents (1.2s)
     #> 
       
        checking for unstated dependencies in examples ...
@@ -872,7 +903,7 @@ glmGUI()
       
        
     #>    See
-    #>      ‘/tmp/RtmpgPTdav/glmgui.Rcheck/00check.log’
+    #>      ‘/tmp/RtmpnENyaj/glmgui.Rcheck/00check.log’
     #>    for details.
     #>    
     #>    
@@ -880,7 +911,7 @@ glmGUI()
       
     
     ── R CMD check results ──────────────────────────────────── glmgui 1.0 ────
-    #> Duration: 25.7s
+    #> Duration: 23.7s
     #> 
     #> ❯ checking dependencies in R code ... WARNING
     #>   'library' or 'require' calls not declared from:
@@ -913,6 +944,10 @@ glmGUI()
     #>     installed size is 21.6Mb
     #>     sub-directories of 1Mb or more:
     #>       extdata  21.3Mb
+    #> 
+    #> ❯ checking top-level files ... NOTE
+    #>   Non-standard file/directory found at top level:
+    #>     ‘images’
     #> 
     #> ❯ checking R code for possible problems ... NOTE
     #>   build_model: no visible binding for '<<-' assignment to
@@ -1480,7 +1515,7 @@ glmGUI()
     #>                "write.csv", "write.table")
     #>   to your NAMESPACE file.
     #> 
-    #> 0 errors ✔ | 3 warnings ✖ | 2 notes ✖
+    #> 0 errors ✔ | 3 warnings ✖ | 3 notes ✖
     #> Error: R CMD check found WARNINGs
 
 </details>

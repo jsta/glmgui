@@ -7,3 +7,4 @@ mirror_zenodo.R
 ^.*\.Rproj$
 ^\.Rproj\.user$
 RGUI_10.R
+images
