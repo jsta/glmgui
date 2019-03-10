@@ -1,8 +1,6 @@
 Package: glmgui
-Type: Package
 Title: glmGUI
 Version: 1.0
-Date: 2018-12-04
 Authors@R: c( person("Marko", "Wenk", role = "cre", email = "wenk_marko@gmx.de"),
 	      person("Benjamin", "Poschlod", role = "aut", email = "Benjamin.Poschlod@campus.lmu.de"),
               person("Mark", "Vetter", role = "aut", email = "mark.vetter@fhws.de"),
@@ -24,8 +22,6 @@ Imports:
   imputeTS,
   glmtools,
   GLMr
-NeedsCompilation: no
-Packaged: 2018-12-04 19:39:41 UTC; Marko
 Author: Marko Wenk [cre],
   Benjamin Poschlod [aut],
   Mark Vetter [aut],
