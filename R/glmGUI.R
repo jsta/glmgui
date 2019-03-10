@@ -1,3 +1,6 @@
+
+#' @export
+#'
 glmGUI <-
 function(...){
   version <- 1.0
@@ -17,7 +20,7 @@ function(...){
       windows_main_menu(version)
     }
     else{
-      install.packages("GLMr", repos="http://owi.usgs.gov/R") 
+      install.packages("GLMr", repos="http://owi.usgs.gov/R")
       if(require("glmtools")){windows_main_menu(version)}
       }
   }
