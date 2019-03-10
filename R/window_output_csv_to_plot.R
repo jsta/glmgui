@@ -1,10 +1,10 @@
 window_output_csv_to_plot <-
 function(directory_csv,...){
   import_csv <- read.csv(directory_csv, header=TRUE,fill = TRUE) # 1 column
-  #INIT Variable 
+  #INIT Variable
   auswahl_plot<-2
   auswahl_glaettungskooef<-"20"
-  
+
   window_import <- gwindow("Output Model (CSV)")
   windows_import_2views <- ggroup(container=window_import,horizontal = TRUE)
   #####left - selection
@@ -15,7 +15,7 @@ function(directory_csv,...){
   combo_glaettung <- gcombobox(c("1","2","3","5","10","20","30","50","100"), selected = 6, editable = TRUE,  handler = function(h,...){print(svalue(h$obj));auswahl_glaettungskooef<<-svalue(h$obj);updatePlots(auswahl_plot)},  container = windows_import_firstView_glaettung)
   glabel("",container = windows_import_firstView)
   windows_import_firstView_smooth <- ggroup(container = windows_import_firstView, horizontal = TRUE)
-  
+
   checkbox_smooth <-gcheckbox(container=windows_import_firstView_smooth,checked=TRUE, handler=function(h,...) {
     updatePlots(auswahl_plot)
   })
@@ -30,10 +30,10 @@ function(directory_csv,...){
   ##### right - plot      EXPAND = TRUE
   windows_import_secoundView <- ggroup(container = windows_import_2views, horizontal = FALSE,expand = TRUE)
   sub_label_titel <-glabel(names(import_csv)[2],container = windows_import_secoundView)
-  font(sub_label_titel) <- c(size=10,weight="bold")
+  font(sub_label_titel) <- c(weight="bold")
   add(windows_import_secoundView, ggraphics(width=1600, height = 900)); ggmain <- dev.cur()
-  
-  
+
+
   addHandlerClicked(radio_button_value, handler=function(h,gg..) {
     tmp_check <- svalue(h$obj)
     svalue(sub_label_titel) <- tmp_check
@@ -55,6 +55,6 @@ function(directory_csv,...){
   updatePlots(auswahl_plot)
   visible(window_import) <- TRUE
   #########################
-  
-  
+
+
 }

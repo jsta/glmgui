@@ -25,7 +25,7 @@ function(version){
   ####  Workspace
   content_project_workspace <- ggroup(horizontal = TRUE ,container = content_project)
   sub_label <-glabel("1. Workspace",container = content_project_workspace)
-  font(sub_label) <- c(size=10,weight="bold")
+  font(sub_label) <- c(weight="bold")
   content_project_workspace2 <- ggroup(horizontal = TRUE ,container = content_project)
   glabel("Path: ",container = content_project_workspace2,fg="red")
   label_workspace <<-glabel("",container = content_project_workspace2,fg="red")
@@ -102,7 +102,7 @@ function(version){
   content_project_data <- ggroup(horizontal = TRUE ,container = content_project)
 
   sub_label<-glabel("2. Data Connection", container = content_project_data)
-  font(sub_label) <- c(size=10,weight="bold")
+  font(sub_label) <- c(weight="bold")
   content_project_meteo <- ggroup(horizontal = TRUE ,container = content_project)
   glabel("Meteo Data:  ", container = content_project_meteo)
   label_met_data <<-glabel("Data not found. Please select!",container = content_project_meteo)
@@ -147,7 +147,7 @@ function(version){
   #### Config
   content_project_nml <- ggroup(horizontal = TRUE ,container = content_project)
   sub_label <-glabel("3. Control File",container = content_project_nml)
-  font(sub_label) <- c(size=10,weight="bold")
+  font(sub_label) <- c(weight="bold")
   content_project_nml2 <- ggroup(horizontal = TRUE ,container = content_project)
   glabel("Status: ",container = content_project_nml2,fg="red")
   label_nml_status <<-glabel("",container = content_project_nml2,fg="red")
@@ -166,7 +166,7 @@ function(version){
   #### Field Data
   content_project_survey <- ggroup(horizontal = TRUE ,container = content_project)
   sub_label<-glabel("4. Field Data", container = content_project_survey)
-  font(sub_label) <- c(size=10,weight="bold")
+  font(sub_label) <- c(weight="bold")
   ### FD- Temp
   content_project_survey1 <- ggroup(horizontal = TRUE ,container = content_project)
   glabel("Temperature : ",container = content_project_survey1,fg="red")
@@ -243,7 +243,7 @@ function(version){
 
   content_project_build <- ggroup(horizontal = TRUE ,container = content_project)
   sub_label<-glabel("5. Build Model", container = content_project_build)
-  font(sub_label) <- c(size=10,weight="bold")
+  font(sub_label) <- c(weight="bold")
   content_project_build1 <- ggroup(horizontal = TRUE ,container = content_project)
   glabel("Status: ",container = content_project_build1,fg="red")
   label_status_build <<-glabel("",container = content_project_build1,fg="red")
