@@ -10,6 +10,20 @@ Authors@R: c( person("Marko", "Wenk", role = "cre", email = "wenk_marko@gmx.de")
 Description: GUI for working with the GLM lake model.
 License: GNU General Public License
 Depends: R (>= 3.4)
+Imports:
+  gWidgets,
+  tcltk,
+  gWidgetsRGtk2,
+  ncdf4,
+  rLakeAnalyzer,
+  digest,
+  graphics,
+  testit,
+  treemap,
+  akima,
+  imputeTS,
+  glmtools,
+  GLMr
 NeedsCompilation: no
 Packaged: 2018-12-04 19:39:41 UTC; Marko
 Author: Marko Wenk [cre],
