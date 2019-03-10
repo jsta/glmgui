@@ -16,6 +16,14 @@ knitr::opts_chunk$set(
 
 Mirror of the `glmgui` package: https://doi.org/10.5281/zenodo.2025865
 
+## Usage
+
+```{r eval=FALSE}
+library(glmgui)
+
+glmGUI()
+```
+
 <details>
 <summary>devtools::check() output</summary>
 ```{r echo = FALSE, error=TRUE}

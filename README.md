@@ -5,6 +5,14 @@
 
 Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
 
+## Usage
+
+``` r
+library(glmgui)
+
+glmGUI()
+```
+
 <details>
 
 <summary>devtools::check()
@@ -35,7 +43,9 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
       
     ─  checking for empty or unneeded directories
     #> ─  looking to see if a ‘data/datalist’ file should be added
-    #> ─  building ‘glmgui_1.0.tar.gz’
+    #> 
+      
+    ─  building ‘glmgui_1.0.tar.gz’
     #> 
       
        
@@ -48,7 +58,7 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     #> ● _R_CHECK_FORCE_SUGGESTS_          : FALSE
     #> ── R CMD check ────────────────────────────────────────────────────────────
     #>   
-    ─  using log directory ‘/tmp/RtmpWhrLNF/glmgui.Rcheck’
+    ─  using log directory ‘/tmp/Rtmp13TM60/glmgui.Rcheck’
     #> 
       
     ─  using R version 3.5.2 (2018-12-20)
@@ -67,11 +77,13 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     ✔  checking package namespace information
     #>    checking package dependencies ...
       
-    ✔  checking package dependencies (1.3s)
+    ✔  checking package dependencies (1.2s)
     #> 
       
     ✔  checking if this is a source package
-    #> ✔  checking if there is a namespace
+    #> 
+      
+    ✔  checking if there is a namespace
     #> 
       
        checking for executable files ...
@@ -89,7 +101,7 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     ✔  checking serialization versions
     #>    checking whether package ‘glmgui’ can be installed ...
       
-    ✔  checking whether package ‘glmgui’ can be installed (2.4s)
+    ✔  checking whether package ‘glmgui’ can be installed (2.3s)
     #> 
       
        checking installed package size ...
@@ -105,9 +117,7 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     ✔  checking DESCRIPTION meta-information
     #> 
       
-    N  checking top-level files
-    #>    Non-standard file/directory found at top level:
-    #>      ‘RGUI_10.R’
+    ✔  checking top-level files
     #> ✔  checking for left-over files
     #> ✔  checking index information
     #>    checking package subdirectories ...
@@ -158,18 +168,17 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
        checking dependencies in R code ...
       
     W  checking dependencies in R code
-    #>    '::' or ':::' import not declared from: ‘rLakeAnalyzer’
-    #>    'library' or 'require' calls not declared from:
+    #> 
+      
+       'library' or 'require' calls not declared from:
     #>      ‘GLMr’ ‘glmtools’
     #>    'library' or 'require' calls in package code:
     #>      ‘GLMr’ ‘glmtools’
     #>      Please use :: or requireNamespace() instead.
     #>      See section 'Suggested packages' in the 'Writing R Extensions' manual.
-    #> 
+    #>    checking S3 generic/method consistency ...
       
-       checking S3 generic/method consistency ...
-      
-    ✔  checking S3 generic/method consistency (455ms)
+    ✔  checking S3 generic/method consistency (458ms)
     #> 
       
        checking replacement functions ...
@@ -184,7 +193,7 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
       
        checking R code for possible problems ...
       
-    N  checking R code for possible problems (6.8s)
+    N  checking R code for possible problems (5.7s)
     #> 
       
        build_model: no visible binding for '<<-' assignment to
@@ -1154,21 +1163,20 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     #> 
       
        
+    #>    See
+    #>      ‘/tmp/Rtmp13TM60/glmgui.Rcheck/00check.log’
+    #>    for details.
+    #>    
     #> 
       
     
       
-       See
-    #>      ‘/tmp/RtmpWhrLNF/glmgui.Rcheck/00check.log’
-    #>    for details.
-    #>    
-    #>    
+       
     #> 
     ── R CMD check results ──────────────────────────────────── glmgui 1.0 ────
-    #> Duration: 13.8s
+    #> Duration: 12.7s
     #> 
     #> ❯ checking dependencies in R code ... WARNING
-    #>   '::' or ':::' import not declared from: ‘rLakeAnalyzer’
     #>   'library' or 'require' calls not declared from:
     #>     ‘GLMr’ ‘glmtools’
     #>   'library' or 'require' calls in package code:
@@ -1198,10 +1206,6 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     #>   All user-level objects in a package should have documentation entries.
     #>   See chapter ‘Writing R documentation files’ in the ‘Writing R
     #>   Extensions’ manual.
-    #> 
-    #> ❯ checking top-level files ... NOTE
-    #>   Non-standard file/directory found at top level:
-    #>     ‘RGUI_10.R’
     #> 
     #> ❯ checking R code for possible problems ... NOTE
     #>   build_model: no visible binding for '<<-' assignment to
@@ -2089,7 +2093,7 @@ Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
     #>                "write.csv", "write.table")
     #>   to your NAMESPACE file.
     #> 
-    #> 0 errors ✔ | 2 warnings ✖ | 2 notes ✖
+    #> 0 errors ✔ | 2 warnings ✖ | 1 note ✖
     #> Error: R CMD check found WARNINGs
 
 </details>
