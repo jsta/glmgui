@@ -11,6 +11,7 @@ Depends: R (>= 3.4)
 Imports:
   gWidgets2,
   gWidgets2RGtk2,
+  RGtk2,
   tcltk,
   ncdf4,
   rLakeAnalyzer,

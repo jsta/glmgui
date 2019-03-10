@@ -72,11 +72,11 @@ function(version){
         #### no existing project found - create New
         window <- gwindow("Confirm", width = 250, height = 100)
         group <- ggroup(container = window)
-        gimage("info", dirname="stock", size="dialog", container=group)
+        gWidgets2::gimage("info", dirname="stock", size="dialog", container=group)
 
         ## A group for the message and buttons
         innergroup <- ggroup(horizontal=FALSE, container = group)
-        glabel("No control file found. \n\nCreate Default?", container=innergroup, expand=TRUE)
+        gWidgets2::glabel("No control file found. \n\nCreate Default?", container=innergroup, expand=TRUE)
 
         ## A group to organize the buttons
         buttongroup <- ggroup(container = innergroup)
@@ -260,7 +260,7 @@ function(version){
   button_build <<- gbutton("Build", container = content_project_build2,handler = function(h, ...){
     ###Start Modelling
     if(svalue(h$obj) == "Build"){
-      svalue(h$obj) <- "Stop"
+      # svalue(h$obj) <- "Stop"
       build_model(workspace = workspace)
     }
     else{
