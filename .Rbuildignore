@@ -4,3 +4,6 @@
 mirror_zenodo.R
 .Rproj
 .gitignore
+^.*\.Rproj$
+^\.Rproj\.user$
+RGUI_10.R
