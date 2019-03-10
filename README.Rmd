@@ -16,6 +16,12 @@ knitr::opts_chunk$set(
 
 Mirror of the `glmgui` package: https://doi.org/10.5281/zenodo.2025865
 
+## Installation
+
+```{r eval=FALSE}
+devtools::install_github("jsta/glmgui")
+```
+
 ## Usage
 
 ```{r eval=FALSE}

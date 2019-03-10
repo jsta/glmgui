@@ -5,6 +5,12 @@
 
 Mirror of the `glmgui` package: <https://doi.org/10.5281/zenodo.2025865>
 
+## Installation
+
+``` r
+devtools::install_github("jsta/glmgui")
+```
+
 ## Usage
 
 ``` r
@@ -34,8 +40,10 @@ glmGUI()
     ✔  checking for file ‘/home/jose/R/scripts/glmgui/DESCRIPTION’
     #> 
       
-    ─  preparing ‘glmgui’: (948ms)
+    ─  preparing ‘glmgui’:
     #> 
+      
+       checking DESCRIPTION meta-information ...
       
     ✔  checking DESCRIPTION meta-information
     #> 
@@ -60,7 +68,7 @@ glmGUI()
     #> ● _R_CHECK_FORCE_SUGGESTS_          : FALSE
     #> ── R CMD check ────────────────────────────────────────────────────────────
     #>   
-    ─  using log directory ‘/tmp/RtmpPsFlR5/glmgui.Rcheck’
+    ─  using log directory ‘/tmp/RtmpgPTdav/glmgui.Rcheck’
     #> 
       
     ─  using R version 3.5.2 (2018-12-20)
@@ -68,7 +76,7 @@ glmGUI()
     #> ─  using session charset: UTF-8
     #> 
       
-    ─  using options ‘--no-manual --as-cran’ (639ms)
+    ─  using options ‘--no-manual --as-cran’ (688ms)
     #> 
       
     ✔  checking for file ‘glmgui/DESCRIPTION’
@@ -76,7 +84,7 @@ glmGUI()
     #> ✔  checking package namespace information
     #>    checking package dependencies ...
       
-    ✔  checking package dependencies (1.1s)
+    ✔  checking package dependencies (1.4s)
     #> 
       
     ✔  checking if this is a source package
@@ -85,7 +93,7 @@ glmGUI()
       
        checking for executable files ...
       
-    ✔  checking for executable files (388ms)
+    ✔  checking for executable files (371ms)
     #> 
       
     ✔  checking for hidden files and directories
@@ -96,7 +104,7 @@ glmGUI()
     ✔  checking serialization versions
     #>    checking whether package ‘glmgui’ can be installed ...
       
-    ✔  checking whether package ‘glmgui’ can be installed (3.3s)
+    ✔  checking whether package ‘glmgui’ can be installed (3.7s)
     #> 
       
        checking installed package size ...
@@ -106,7 +114,9 @@ glmGUI()
       
          installed size is 21.6Mb
     #>      sub-directories of 1Mb or more:
-    #>        extdata  21.3Mb
+    #> 
+      
+           extdata  21.3Mb
     #> 
       
        checking package directory ...
@@ -137,37 +147,35 @@ glmGUI()
       
        checking whether the package can be loaded ...
       
-    ✔  checking whether the package can be loaded (481ms)
+    ✔  checking whether the package can be loaded (470ms)
     #> 
       
        checking whether the package can be loaded with stated dependencies ...
       
-    ✔  checking whether the package can be loaded with stated dependencies (457ms)
+    ✔  checking whether the package can be loaded with stated dependencies (456ms)
     #> 
       
        checking whether the package can be unloaded cleanly ...
       
-    ✔  checking whether the package can be unloaded cleanly (443ms)
+    ✔  checking whether the package can be unloaded cleanly (448ms)
     #> 
       
        checking whether the namespace can be loaded with stated dependencies ...
       
-    ✔  checking whether the namespace can be loaded with stated dependencies (460ms)
+    ✔  checking whether the namespace can be loaded with stated dependencies (457ms)
     #> 
       
        checking whether the namespace can be unloaded cleanly ...
       
-    ✔  checking whether the namespace can be unloaded cleanly (458ms)
-    #> 
+    ✔  checking whether the namespace can be unloaded cleanly (467ms)
+    #>    checking loading without being on the library search path ...
       
-       checking loading without being on the library search path ...
-      
-    ✔  checking loading without being on the library search path (518ms)
+    ✔  checking loading without being on the library search path (521ms)
     #> 
       
        checking dependencies in R code ...
       
-    W  checking dependencies in R code (840ms)
+    W  checking dependencies in R code (847ms)
     #>    'library' or 'require' calls not declared from:
     #>      ‘GLMr’ ‘glmtools’
     #>    'library' or 'require' calls in package code:
@@ -178,20 +186,22 @@ glmGUI()
       
        checking S3 generic/method consistency ...
       
-    ✔  checking S3 generic/method consistency (942ms)
+    ✔  checking S3 generic/method consistency (1s)
     #> 
       
        checking replacement functions ...
       
-    ✔  checking replacement functions (516ms)
-    #>    checking foreign function calls ...
+    ✔  checking replacement functions (582ms)
+    #> 
       
-    ✔  checking foreign function calls (694ms)
+       checking foreign function calls ...
+      
+    ✔  checking foreign function calls (777ms)
     #> 
       
        checking R code for possible problems ...
       
-    N  checking R code for possible problems (7.3s)
+    N  checking R code for possible problems (7.8s)
     #> 
       
        build_model: no visible binding for '<<-' assignment to
@@ -799,12 +809,12 @@ glmGUI()
       
        checking Rd cross-references ...
       
-    ✔  checking Rd cross-references (412ms)
+    ✔  checking Rd cross-references
     #> 
       
        checking for missing documentation entries ...
       
-    W  checking for missing documentation entries (522ms)
+    W  checking for missing documentation entries (531ms)
     #>    Undocumented code objects:
     #>      ‘glmGUI’
     #>    Undocumented data sets:
@@ -816,7 +826,7 @@ glmGUI()
     #>    Extensions’ manual.
     #>    checking for code/documentation mismatches ...
       
-    ✔  checking for code/documentation mismatches (1.5s)
+    ✔  checking for code/documentation mismatches (1.6s)
     #> 
       
        checking Rd \usage sections ...
@@ -862,7 +872,7 @@ glmGUI()
       
        
     #>    See
-    #>      ‘/tmp/RtmpPsFlR5/glmgui.Rcheck/00check.log’
+    #>      ‘/tmp/RtmpgPTdav/glmgui.Rcheck/00check.log’
     #>    for details.
     #>    
     #>    
@@ -870,7 +880,7 @@ glmGUI()
       
     
     ── R CMD check results ──────────────────────────────────── glmgui 1.0 ────
-    #> Duration: 24.1s
+    #> Duration: 25.7s
     #> 
     #> ❯ checking dependencies in R code ... WARNING
     #>   'library' or 'require' calls not declared from:
